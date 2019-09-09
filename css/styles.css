@@ -1,0 +1,359 @@
+body {
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding-bottom: 600px;
+}
+
+.wrapper_class {
+	position: relative;
+	background-color: #fff;
+	z-index: 200;
+}
+
+.header {
+	min-height: 600px;
+	width: 100%;
+	background: url("../img/bg.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: .95;
+}
+
+.header__flex {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px; 
+}
+
+.logo a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 35px;
+	font-family: 'Dancing Script', cursive;
+	transition: .5s ease-in-out;
+}
+
+.logo a:hover {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	transform: scale(1.1);
+}
+
+.header__nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__nav a {
+	display: block;
+	font-family: 'Barlow', sans-serif;
+	line-height: 65px;
+	font-size: 15px;
+	margin-right: 20px;
+	text-decoration: none;
+	color: #D3CBCB;
+	transition: color 0.5s ease;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.header__nav a:hover {
+	color: #fff;
+}
+
+.header__nav a:focus {
+	color: #fff;
+}
+
+.offer {
+	margin-top: 150px;
+}
+
+.offer h1 {
+	font-family: 'Dancing Script', cursive;
+	display: block;
+	font-weight: bold;
+	font-size: 120px;
+	color: #fff;
+	padding-bottom: 60px;
+	text-align: center;
+}  
+
+.offer button {
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 10px;
+	padding: 20px 50px;
+	box-sizing: border-box;
+	color: #fff;
+	background-color: inherit;
+	border: 2px solid #fff;
+	transition: color 0.5s ease-in;
+	outline: none;
+	cursor: pointer;
+} 
+
+.offer button:active {
+	box-shadow: inset 0 0 0 3px #fff;
+	outline: none;
+}
+
+.services {
+	padding: 35px 107px 86px 107px;
+	background: #262626;
+	position: relative;
+}
+
+.services__flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+	align-self: center;
+}
+
+.services .h_2 {
+	color: #fff;
+	font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+	display: block;
+}
+
+.form {
+	display: block;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.inner {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 10px 60px 10px 10px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+.input {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	font-size: 16px;
+	color: #fff;
+	width: 50px;
+	transition: width 0.3s ease;
+}
+
+.search_img {
+	margin-right: 5px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.form:focus-within {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.inner button {
+	padding: 3px;
+	line-height: 0;
+	background: transparent;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	display: none;
+}
+
+.inner button svg path {
+	fill: #ffffff;
+}
+
+.clear:focus,
+.clear:hover,
+.close:focus svg path,
+.close:hover svg path {
+	fill: #424242;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+
+.input:focus {
+	width: 200px;
+	cursor: initial;
+}
+
+.bulkhead {
+	width: 1px;
+	height: 100%;
+	background: #fff;
+	margin: 0 5px;
+	display: none;
+}
+
+.form:focus-within .clear,
+.form:focus-within .close,
+.form:focus-within .bulkhead {
+	display: block;
+}  
+
+.service-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.service-list article {
+	width: 300px;
+	height: 400px;
+	position: relative;
+	margin-bottom: 20px;
+	transition: 0.3s ease;
+}
+
+.service-list article .hidden {
+	display: none;
+}
+
+.service-list article:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.service-list article img {
+	width: 100%;
+	border-radius: 10px;
+	transition: all .5s ease-in-out;
+}
+
+.service-list a {
+	margin-bottom: 20px;
+}
+
+.service-list a article img:hover {
+	 border-radius: 50%;
+}
+
+.service-list article h3 {
+	font-family: 'Lato', serif;
+	color: #fff;
+	font-style: normal;
+	font-size: 19px;
+	line-height: normal;
+	text-align: center;
+	margin: 25px 0 10px;
+	font-style: italic;
+}
+
+.service-list article p {
+	font-family: 'Lato', serif;
+	font-style: normal;
+	color: #d3cbcb;
+	font-weight: normal;
+	font-size: 14px;
+	height: 40px;
+	overflow: hidden;
+}
+
+.service-list article .price {
+	font-family: 'Lato', serif;
+	color: #d3cbcb;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: center;
+	position: absolute;
+	bottom: -10px;
+	left: 4px;
+}
+
+.service-list article button {
+	display: block;
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px 40px;
+	box-sizing: border-box;
+	color: #fff;
+	background-color: inherit;
+	border:1px solid #fff;
+	transition: color 0.5s ease-in;
+	outline: none;
+	position: absolute;
+	right: 0;
+	bottom: -10px;
+}
+
+article button:active {
+	color: #fff;
+	box-shadow: inset 0 0 0 3px #fff;
+	outline: none;
+}
+
+.footer {
+	height: 600px;
+	width: 100%;
+	position: relative;
+	background: url("../img/footer__bottom.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	opacity: .8;
+}
+
+.hour,
+.adress,
+.phone {
+	cursor: pointer;
+}
+
+.footer__box {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	font-family: 'Lato', serif;
+	margin-top: 520px;
+	background-color: #d3cbcb;
+	color: #000;
+	padding: 25px;
+	border-radius: 4px;
+} 
+
+
+.footer > div:not(:last-child) {
+	margin-right: 30px;
+}
+
+.footer .phone img,
+.footer .hour img,
+.footer .adress img {
+	margin-right: 15px;
+	position: relative;
+	top: 5px;
+	width: 33px;
+	color: #fff;
+}

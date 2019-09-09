@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barber shop `Nothing Odd`</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+  <link href="img/S.png" rel="shortcut icon">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="wrapper_class">
+    <header class="header">
+      <div class="container">
+        <div class="header__flex">
+          <div class="logo">
+            <a href="#" class="logo-link">Barber shop</a>
+          </div>
+
+          <div class="header__nav">
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#barbers">Barbers</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="offer">
+          <h1 class="offer__h1 animated pulse">Nothing Odd</h1>
+          <button class="offer__button btn-1">book now</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="services__flex">
+          <div class="h_2">Our Services</div>
+          <div class="wrapper">
+            <form action="search" class="form1 form">
+              <div class="inner">
+                <div class="search_img">
+                  <svg style="width:30px;height:30px" viewBox="0 0 30 30" fill="white">
+                    <path
+                      d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                  </svg>
+                </div>
+
+                <input name="search" type="text" class="input" placeholder="Search service" id="search"
+                  oninput="changed(event)">
+                <div class="bulkhead"></div>
+                <button type="button" class="close" disabled><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path
+                      d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                  </svg></button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <section class="service-list" id="barbers">
+          <a href="#">
+            <article data-content='Beard'>
+              <img src="img/foxs-barber-shop-black-and-white-david-waldo_3.jpg" alt="Beard">
+              <h3>Beard</h3>
+              <p> Sed voluptatem esse ut saepe tenetur
+                repudiandae
+                sapiente.</p>
+              <span class="price">$35</span>
+              <button>BOOK NOW</button>
+            </article>
+          </a>
+
+          <a href="#">
+            <article data-content='Styling'>
+              <img src="img/Manchester-1049280_1.jpg" alt="Styling">
+              <h3>Styling</h3>
+              <p>Lorem ipsum dolor sit amet. Sed voluptatem esse ut saepe tenetur
+                repudiandae
+                sapiente.</p>
+              <span class="price">$25</span>
+              <button>BOOK NOW</button>
+            </article>
+          </a>
+
+          <a href="#">
+            <article data-content='Royal shave'>
+              <img src="img/Schorem-haarsnijder-barbier-chairs-and-cabinet1_2.jpg" alt="Royal shave">
+              <h3>Royal shave</h3>
+              <p>Lorem ipsum dolor sit amet. Sed voluptatem esse ut saepe tenetur
+                repudiandae
+                sapiente.</p>
+              <span class="price">$15</span>
+              <button>BOOK NOW</button>
+            </article>
+          </a>
+
+          <a href="#">
+            <article data-content='Junior haircut'>
+              <img src="img/the-barber-shop-10-bw-angelina-vick_4.jpg" alt="Junior haircut">
+              <h3>Junior haircut</h3>
+              <p>Sed voluptatem esse ut saepe tenetur
+                repudiandae
+                sapiente.</p>
+              <span class="price">$40</span>
+              <button>BOOK NOW</button>
+            </article>
+          </a>
+
+          <a href="#">
+            <article data-content='Haircut'>
+              <img src="img/the-barber-фshop-10-bw-angelina-vick_4.jpg" alt="Haircut">
+              <h3>Haircut</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <span class="price">$25</span>
+              <button>BOOK NOW</button>
+            </article>
+          </a>
+
+          <a href="#">
+            <article data-content='Shave'>
+              <img src="img/Manchester-10я49280_1.jpg" alt="Shave">
+              <h3>Shave</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <span class="price">$15</span>
+              <button>BOOK NOW</button>
+            </article>
+          </a>
+      </div>
+    </section>
+  </div>
+  <!-- end wrapper_class -->
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__box">
+        <div class="phone">
+          <img src="img/phone.png" alt="phone" class="hover_scale">
+          (213) 974-3211
+        </div>
+        <div class="hour">
+          <img src="img/hour.jpg" alt="hour" class="hover_scale">
+          8 AM - 8 PM, Mon - Sat
+        </div>
+        <div class="adress">
+          <img src="img/address.png" alt="adress" class="hover_scale">
+          107 Sunset Boulevard, LA
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
