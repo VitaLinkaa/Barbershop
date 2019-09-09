@@ -1,2 +1,2 @@
 # Barbershop
-(https://vitalinkaa.github.io/Barbershop/)
+[# Barbershop](https://vitalinkaa.github.io/Barbershop/)
