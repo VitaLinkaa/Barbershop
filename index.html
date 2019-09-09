@@ -58,7 +58,7 @@
                 </div>
 
                 <input name="search" type="text" class="input" placeholder="Search service" id="search"
-                  oninput="changed(event)">
+                  autocomplete="off" oninput="changed(event)">
                 <div class="bulkhead"></div>
                 <button type="button" class="close" disabled><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <path
@@ -72,15 +72,21 @@
         <section class="service-list" id="barbers">
           <a href="#">
             <article data-content='Beard'>
+
               <img src="img/foxs-barber-shop-black-and-white-david-waldo_3.jpg" alt="Beard">
               <h3>Beard</h3>
               <p> Sed voluptatem esse ut saepe tenetur
                 repudiandae
                 sapiente.</p>
-              <span class="price">$35</span>
-              <button>BOOK NOW</button>
+              <div class="price-button">
+                <div class="price">$35</div>
+                <button>BOOK NOW</button>
+              </div>
             </article>
           </a>
+
+
+
 
           <a href="#">
             <article data-content='Styling'>
@@ -89,8 +95,10 @@
               <p>Lorem ipsum dolor sit amet. Sed voluptatem esse ut saepe tenetur
                 repudiandae
                 sapiente.</p>
-              <span class="price">$25</span>
-              <button>BOOK NOW</button>
+              <div class="price-button">
+                <div class="price">$15</div>
+                <button>BOOK NOW</button>
+              </div>
             </article>
           </a>
 
@@ -101,8 +109,10 @@
               <p>Lorem ipsum dolor sit amet. Sed voluptatem esse ut saepe tenetur
                 repudiandae
                 sapiente.</p>
-              <span class="price">$15</span>
-              <button>BOOK NOW</button>
+              <div class="price-button">
+                <div class="price">$65</div>
+                <button>BOOK NOW</button>
+              </div>
             </article>
           </a>
 
@@ -113,8 +123,10 @@
               <p>Sed voluptatem esse ut saepe tenetur
                 repudiandae
                 sapiente.</p>
-              <span class="price">$40</span>
-              <button>BOOK NOW</button>
+              <div class="price-button">
+                <div class="price">$25</div>
+                <button>BOOK NOW</button>
+              </div>
             </article>
           </a>
 
@@ -123,8 +135,10 @@
               <img src="img/the-barber-фshop-10-bw-angelina-vick_4.jpg" alt="Haircut">
               <h3>Haircut</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-              <span class="price">$25</span>
-              <button>BOOK NOW</button>
+              <div class="price-button">
+                <div class="price">$35</div>
+                <button>BOOK NOW</button>
+              </div>
             </article>
           </a>
 
@@ -133,8 +147,10 @@
               <img src="img/Manchester-10я49280_1.jpg" alt="Shave">
               <h3>Shave</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <span class="price">$15</span>
-              <button>BOOK NOW</button>
+              <div class="price-button">
+                <div class="price">$15</div>
+                <button>BOOK NOW</button>
+              </div>
             </article>
           </a>
       </div>
@@ -143,22 +159,30 @@
   <!-- end wrapper_class -->
 
   <footer class="footer" id="contacts">
-    <div class="container">
-      <div class="footer__box">
-        <div class="phone">
-          <img src="img/phone.png" alt="phone" class="hover_scale">
-          (213) 974-3211
-        </div>
-        <div class="hour">
-          <img src="img/hour.jpg" alt="hour" class="hover_scale">
+
+    <div class="footer__box">
+      <div class="phone">
+        <img src="img/phone.png" alt="phone" class="hover_scale">
+
+        <a href=" tel:+382139743211">
+          +38 (213) 974 32 11
+        </a>
+
+      </div>
+      <div class="hour">
+        <img src="img/hour.jpg" alt="hour" class="hover_scale">
+        <a href="#">
           8 AM - 8 PM, Mon - Sat
-        </div>
-        <div class="adress">
-          <img src="img/address.png" alt="adress" class="hover_scale">
+        </a>
+      </div>
+      <div class="adress">
+        <img src="img/address.png" alt="adress" class="hover_scale">
+        <a href="#">
           107 Sunset Boulevard, LA
-        </div>
+        </a>
       </div>
     </div>
+
   </footer>
 </body>
 

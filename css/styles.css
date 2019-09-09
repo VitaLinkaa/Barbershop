@@ -1,7 +1,7 @@
 body {
 	margin: 0 auto;
 	box-sizing: border-box;
-	padding-bottom: 600px;
+	padding-bottom: 700px;
 }
 
 .wrapper_class {
@@ -11,7 +11,8 @@ body {
 }
 
 .header {
-	min-height: 600px;
+	height: 100vh;
+	min-height: 700px;
 	width: 100%;
 	background: url("../img/bg.jpg") no-repeat;
 	background-position: center;
@@ -22,6 +23,7 @@ body {
 .header__flex {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-top: 40px; 
 }
 
@@ -31,7 +33,7 @@ body {
 	color: #fff;
 	font-size: 35px;
 	font-family: 'Dancing Script', cursive;
-	transition: .5s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .logo a:hover {
@@ -55,7 +57,7 @@ body {
 	margin-right: 20px;
 	text-decoration: none;
 	color: #D3CBCB;
-	transition: color 0.5s ease;
+	transition: color 0.3s ease;
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -96,7 +98,7 @@ body {
 	color: #fff;
 	background-color: inherit;
 	border: 2px solid #fff;
-	transition: color 0.5s ease-in;
+	transition: background-color 0.3s ease-in;
 	outline: none;
 	cursor: pointer;
 } 
@@ -104,6 +106,10 @@ body {
 .offer button:active {
 	box-shadow: inset 0 0 0 3px #fff;
 	outline: none;
+}
+
+.offer button:hover {
+	background-color: rgba(255, 255, 255, 0.3)
 }
 
 .services {
@@ -141,7 +147,7 @@ body {
 	align-items: center;
 	height: 40px;
 	box-sizing: border-box;
-	padding: 10px 60px 10px 10px;
+	padding: 10px 20px 10px 10px;
 	border: 1px solid #fff;
 	border-radius: 10px;
 }
@@ -153,7 +159,7 @@ body {
 	background: transparent;
 	font-size: 16px;
 	color: #fff;
-	width: 50px;
+	width: 120px;
 	transition: width 0.3s ease;
 }
 
@@ -221,13 +227,29 @@ body {
 	overflow: hidden;
 }
 
+
 .service-list article {
-	width: 300px;
-	height: 400px;
-	position: relative;
-	margin-bottom: 20px;
-	transition: 0.3s ease;
+	  position: relative;
+	  margin: auto;
+	  overflow: hidden;
+		width: 300px;
+		height: 420px;
+		padding: 5px;
 }
+
+.service-list article img {
+	max-width: 100%;
+	transition: all 0.3s;
+	display: block;
+	width: 100%;
+	height: auto;
+	transform: scale(1);
+}
+
+.service-list article img:hover {
+	transform: scale(1.1);
+}
+
 
 .service-list article .hidden {
 	display: none;
@@ -237,19 +259,11 @@ body {
 	margin-bottom: 50px;
 }
 
-.service-list article img {
-	width: 100%;
-	border-radius: 10px;
-	transition: all .5s ease-in-out;
-}
 
 .service-list a {
 	margin-bottom: 20px;
 }
 
-.service-list a article img:hover {
-	 border-radius: 50%;
-}
 
 .service-list article h3 {
 	font-family: 'Lato', serif;
@@ -272,47 +286,58 @@ body {
 	overflow: hidden;
 }
 
-.service-list article .price {
-	font-family: 'Lato', serif;
+.price-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.price-button .price {
+	font-family: 'Lato',
+	serif;
 	color: #d3cbcb;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
-	text-align: center;
-	position: absolute;
-	bottom: -10px;
-	left: 4px;
 }
-
-.service-list article button {
-	display: block;
-	margin: 0 auto;
+.price-button button {
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 30px;
 	text-transform: uppercase;
-	text-align: center;
 	border-radius: 10px;
-	padding: 10px 40px;
+	padding: 10px 40px; 
 	box-sizing: border-box;
 	color: #fff;
 	background-color: inherit;
 	border:1px solid #fff;
-	transition: color 0.5s ease-in;
+	transition: background-color 0.3s ease-in;
 	outline: none;
-	position: absolute;
-	right: 0;
-	bottom: -10px;
 }
 
 article button:active {
-	color: #fff;
-	box-shadow: inset 0 0 0 3px #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 0 0 1px #fff;
 	outline: none;
 }
 
+section a {
+	text-decoration: none;
+}
+
+section a:hover {
+	text-decoration: none;
+}
+
+article button:hover{
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 0 0 3px #fff;
+
+}
+
 .footer {
-	height: 600px;
+	height: 100vh;
 	width: 100%;
 	position: relative;
 	background: url("../img/footer__bottom.jpg") no-repeat;
@@ -336,24 +361,217 @@ article button:active {
 	justify-content: space-between;
 	font-size: 16px;
 	font-family: 'Lato', serif;
-	margin-top: 520px;
 	background-color: #d3cbcb;
 	color: #000;
 	padding: 25px;
 	border-radius: 4px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 } 
 
-
-.footer > div:not(:last-child) {
-	margin-right: 30px;
-}
 
 .footer .phone img,
 .footer .hour img,
 .footer .adress img {
 	margin-right: 15px;
-	position: relative;
-	top: 5px;
 	width: 33px;
 	color: #fff;
+}
+
+.footer a {
+	font-size: 15px;
+	position: relative;
+	color: #101111;
+	cursor: pointer;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.footer a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #636865;
+	content: "";
+	transition: width 0.3s ease-out;
+
+}
+
+.footer a:hover:after,
+.footer a:focus:after {
+	width: 100%;
+}
+
+
+
+@media (max-width: 850px) {
+	.header__flex {
+		display: block;
+	}
+	
+	.logo a {
+		text-align: center;
+	}
+
+	.offer button {
+	padding: 20px 50px;
+	}
+	
+	.offer h1 {
+		font-size: 80px;
+		padding-bottom: 30px;
+	}
+
+	.services__flex {
+		display: block;
+	}
+
+	.services .h_2 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.wrapper {
+		justify-content: center;
+	}
+
+	.service-list article {
+		width: 250px;
+	}
+}
+
+@media (max-width: 800px) {
+	.service-list {
+		display: block;
+	}
+
+	.offer button {
+		padding: 20px 50px;
+	}
+
+	.service-list article {
+		width: 300px;
+		margin: 40px auto;
+	}
+
+	.footer__box {
+		display: block;
+		width: 100%;
+		margin-top: 443px;
+		font-size: 14px;
+		text-align: center;
+	}
+	.footer .phone img,
+	.footer .hour img,
+	.footer .adress img {
+		margin: 5px auto;
+		top: -6px;
+		width: 26px;
+		margin-right: 10px;
+	}
+
+	.footer .phone {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+
+@media (max-width: 600px) {
+	.offer button {
+		padding: 20px 50px;
+	}
+}
+
+
+
+
+@media (max-width: 550px) {
+	.offer h1 {
+		font-size: 60px;
+	}
+
+	.services__flex {
+		margin-bottom: 30px;
+	}
+
+	.service-list article button {
+		font-size: 12px;
+		padding: 5px 25px;
+	}
+
+	.service-list article  {
+		width: 100%;
+	}
+
+	.services .h_2 {
+		font-size: 40px;
+	}
+
+	.price {
+		font-size: 12px;
+	}
+
+	.service-list article {
+		width: 250px;
+		height: 370px;
+	}
+
+	.service-list article .price {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media (max-width: 420px) {
+	.header__nav ul {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.service-list article img {
+		width: 120px;
+		height: 270px;
+	}
+
+	.header__nav ul li a {
+		font-size: 12px;
+	}
+
+	.header__nav a {
+		line-height: 20px;
+	}
+
+	.offer button {
+		font-size: 12px;
+		line-height: 15px;
+		padding: 10px 25px;
+	}
+
+
+	.services .h_2 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 360px) { 
+	.service-list article {
+		margin: 10px auto;
+		height: 250px;
+	}
+	.service-list article .price {
+		display: none;
+}
+	.service-list article button {
+	padding: 0px 23px;
+	margin-bottom: 20px;
+	}
 }
