@@ -1,5 +1,4 @@
 @font-face {
-
 	font-family: 'MyWebFont';
 	src: url('../font/roboto/Roboto-Bold.eot') format('eot');
 	src: url('../font/roboto/Roboto-Bold.ttf') format('ttf'),
@@ -7,9 +6,6 @@
 		url('../font/roboto/Roboto-Light.woff') format('woff'),
 		url('../font/roboto/Roboto-Medium.woff2') format('woff2')
 }
-
-
-
 
 body {
 	margin: 0 auto;
@@ -106,7 +102,6 @@ nav {
 }
 
 .menuToggle {
-
 	font-weight: 600;
 	padding: 10px 15px;
 	cursor: pointer;
@@ -159,7 +154,6 @@ body {
 	font-weight: bold;
 	font-size: 120px;
 	color: #fff;
-	padding-bottom: 60px;
 	text-align: center;
 }  
 
@@ -524,7 +518,7 @@ article button:hover{
 		position: absolute;
 		background: lightgrey;
 		width: 30%;
-		margin-left: 10px;
+		margin-top: 50px;
 	}
 
 	.menu li {
@@ -568,18 +562,17 @@ article button:hover{
 }
 
 
-
 @media(max-width: 640px) {
 	.menuToggle {
 		display: block;
 	}
 
 	.menu {
+		margin-top: 50px;
 		display: none;
 		position: absolute;
 		background: lightgrey;
 		width: 30%;
-		margin-left: 10px;
 	}
 
 	.menu li {

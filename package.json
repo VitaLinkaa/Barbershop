@@ -1,0 +1,12 @@
+{
+  "name": "barber",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://vitalinkaa.github.io/Barbershop/",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  }
+}
