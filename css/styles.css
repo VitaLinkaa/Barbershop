@@ -1,3 +1,16 @@
+@font-face {
+
+	font-family: 'MyWebFont';
+	src: url('../font/roboto/Roboto-Bold.eot') format('eot');
+	src: url('../font/roboto/Roboto-Bold.ttf') format('ttf'),
+		url('../font/roboto/Roboto-Bold.woff2') format('woff2'),
+		url('../font/roboto/Roboto-Light.woff') format('woff'),
+		url('../font/roboto/Roboto-Medium.woff2') format('woff2')
+}
+
+
+
+
 body {
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -41,6 +54,72 @@ body {
 	text-decoration: none;
 	color: #000;
 	transform: scale(1.1);
+}
+
+
+nav {
+	background:inherit;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.menu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	display: inline-block;
+	font-family: 'Barlow', sans-serif;
+	font-size: 15px;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #D3CBCB;
+	text-transform: uppercase;
+	font-weight: 600;
+	position: relative;
+
+}
+
+.menu li a:after {
+	display: block;
+	position: absolute;
+	height: 2px;
+	left: 50%;
+	width: 0;
+	background-color: #D3CBCB;
+	content: "";
+	transition: width 0.3s ease-out;
+	transform: translateX(-50%);
+
+}
+
+.menu li a:hover:after,
+.menu li a:focus:after {
+	width: 100%;
+}
+
+.menuToggle {
+
+	font-weight: 600;
+	padding: 10px 15px;
+	cursor: pointer;
+	display: none;
+}
+
+.menuToggle img {
+	width: 40px;
+	color: #fff;
+}
+
+body {
+	height: 100%;
 }
 
 .header__nav ul {
@@ -113,7 +192,7 @@ body {
 }
 
 .services {
-	padding: 35px 107px 86px 107px;
+	padding: 35px 20px 86px 20px;
 	background: #262626;
 	position: relative;
 }
@@ -264,7 +343,6 @@ body {
 	margin-bottom: 20px;
 }
 
-
 .service-list article h3 {
 	font-family: 'Lato', serif;
 	color: #fff;
@@ -290,7 +368,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 }
 
 .price-button .price {
@@ -301,6 +378,7 @@ body {
 	font-weight: normal;
 	font-size: 18px;
 }
+
 .price-button button {
 	font-size: 16px;
 	font-weight: 600;
@@ -333,7 +411,6 @@ section a:hover {
 article button:hover{
 	background-color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 0 0 3px #fff;
-
 }
 
 .footer {
@@ -370,7 +447,6 @@ article button:hover{
 	width: 100%;
 } 
 
-
 .footer .phone img,
 .footer .hour img,
 .footer .adress img {
@@ -397,7 +473,6 @@ article button:hover{
 	background-color: #636865;
 	content: "";
 	transition: width 0.3s ease-out;
-
 }
 
 .footer a:hover:after,
@@ -406,23 +481,26 @@ article button:hover{
 }
 
 
+@media (max-width: 1024px) {
+	.offer h1 {
+	margin-top: 300px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.offer h1 {
+		margin-top: 350px;
+	}
+}
 
 @media (max-width: 850px) {
-	.header__flex {
-		display: block;
-	}
 	
 	.logo a {
 		text-align: center;
 	}
 
-	.offer button {
-	padding: 20px 50px;
-	}
-	
 	.offer h1 {
 		font-size: 80px;
-		padding-bottom: 30px;
 	}
 
 	.services__flex {
@@ -431,25 +509,34 @@ article button:hover{
 
 	.services .h_2 {
 		text-align: center;
-		margin-bottom: 30px;
 	}
 
 	.wrapper {
 		justify-content: center;
 	}
 
-	.service-list article {
-		width: 250px;
-	}
-}
-
-@media (max-width: 800px) {
-	.service-list {
+	.menuToggle {
 		display: block;
 	}
 
-	.offer button {
-		padding: 20px 50px;
+	.menu {
+		display: none;
+		position: absolute;
+		background: lightgrey;
+		width: 30%;
+		margin-left: 10px;
+	}
+
+	.menu li {
+		float: none;
+	}
+
+	.menu li a {
+		color: #000;
+	}
+
+	.service-list {
+		display: block;
 	}
 
 	.service-list article {
@@ -464,6 +551,7 @@ article button:hover{
 		font-size: 14px;
 		text-align: center;
 	}
+
 	.footer .phone img,
 	.footer .hour img,
 	.footer .adress img {
@@ -481,97 +569,35 @@ article button:hover{
 
 
 
-@media (max-width: 600px) {
-	.offer button {
-		padding: 20px 50px;
-	}
-}
-
-
-
-
-@media (max-width: 550px) {
-	.offer h1 {
-		font-size: 60px;
-	}
-
-	.services__flex {
-		margin-bottom: 30px;
-	}
-
-	.service-list article button {
-		font-size: 12px;
-		padding: 5px 25px;
-	}
-
-	.service-list article  {
-		width: 100%;
-	}
-
-	.services .h_2 {
-		font-size: 40px;
-	}
-
-	.price {
-		font-size: 12px;
-	}
-
-	.service-list article {
-		width: 250px;
-		height: 370px;
-	}
-
-	.service-list article .price {
+@media(max-width: 640px) {
+	.menuToggle {
 		display: block;
-		text-align: center;
-	}
-}
-
-@media (max-width: 420px) {
-	.header__nav ul {
-		list-style: none;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: flex-end;
 	}
 
-	.service-list article img {
-		width: 120px;
-		height: 270px;
+	.menu {
+		display: none;
+		position: absolute;
+		background: lightgrey;
+		width: 30%;
+		margin-left: 10px;
 	}
 
-	.header__nav ul li a {
-		font-size: 12px;
+	.menu li {
+		float: none;
+	}
+		
+	.menu li a {
+		color: #000;
 	}
 
-	.header__nav a {
-		line-height: 20px;
+	.services {
+		padding: 35px 20px 86px 20px;
 	}
-
-	.offer button {
-		font-size: 12px;
-		line-height: 15px;
-		padding: 10px 25px;
-	}
-
-
-	.services .h_2 {
-		font-size: 20px;
-		margin-bottom: 20px;
-	}
+	
 }
 
 @media (max-width: 360px) { 
-	.service-list article {
-		margin: 10px auto;
-		height: 250px;
-	}
-	.service-list article .price {
-		display: none;
-}
-	.service-list article button {
-	padding: 0px 23px;
-	margin-bottom: 20px;
-	}
+	.price-button {
+		justify-content: space-around;
+	} 
 }
