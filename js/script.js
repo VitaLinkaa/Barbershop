@@ -1,3 +1,5 @@
+"use strict";
+
 const search = document.querySelector("#search");
 search.addEventListener('input', changed)
 
@@ -20,3 +22,14 @@ $(function(){
        });
     });
 });
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > $(this).height()) {
+        $('.arrow-top').addClass('active');
+    } else {
+        $('.arrow-top').removeClass('active');
+    }
+});
+
+
+

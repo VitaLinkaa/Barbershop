@@ -9,8 +9,10 @@
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,700,900&display=swap&subset=latin-ext"
+    rel="stylesheet">
   <link href="img/S.png" rel="shortcut icon">
-  <!-- <link rel="stylesheet" href=".css/animate.css"> -->
+  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link href="./css/styles.css" rel="stylesheet" type="text/css">
 
@@ -18,12 +20,12 @@
 
 <body>
   <div class="wrapper_class">
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
-        
+
         <div class="header__flex">
           <div class="logo">
-            <a href="#" class="logo-link">Barber shop</a>
+            <a href="#" class="logo-link">Barber <br>shop</a>
           </div>
 
           <nav>
@@ -36,16 +38,22 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#barbers">Barbers</a></li>
                 <li><a href="#contacts">Contacts</a></li>
-                
+
               </ul>
             </div>
           </nav>
         </div>
 
         <div class="offer">
-          <h1 class="offer__h1 animated pulse">Nothing Odd</h1>
+          <h1 class="offer__h1">Nothing Odd</h1>
           <button class="offer__button btn-1">book now</button>
         </div>
+
+        <div class="arrow-down">
+          <a class="arrows-down__img" href="#services">
+            <img class="animated bounce slow infinite" src="./img/arrow-down.png" alt=""></a>
+        </div>
+
       </div>
     </header>
 
@@ -161,6 +169,12 @@
           </a>
       </div>
     </section>
+ <div class="arrow-top">
+   <a href="#header">
+     <img class="arrow-top__img" src="./img/arrow-up.png" alt="up">
+   </a>
+ </div>
+
   </div>
   <!-- end wrapper_class -->
 
@@ -188,9 +202,9 @@
         </a>
       </div>
     </div>
-
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="./js/jquery.js"></script>
   <script defer src="./js/script.js"></script>
 </body>
 

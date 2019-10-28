@@ -11,6 +11,7 @@ body {
 	margin: 0 auto;
 	box-sizing: border-box;
 	padding-bottom: 700px;
+	position: relative;
 }
 
 .wrapper_class {
@@ -20,6 +21,7 @@ body {
 }
 
 .header {
+	position: relative;
 	height: 100vh;
 	min-height: 700px;
 	width: 100%;
@@ -33,23 +35,25 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding-top: 40px; 
+	padding-top: 30px; 
 }
 
 .logo a {
-	display: block;
 	text-decoration: none;
 	color: #fff;
-	font-size: 35px;
-	font-family: 'Dancing Script', cursive;
-	transition: .3s ease-in-out;
-}
-
-.logo a:hover {
-	display: block;
-	text-decoration: none;
-	color: #000;
-	transform: scale(1.1);
+	font-size: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-family: 'Red Hat Display',
+	sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #2E2F45;
+	display: table;
+	border-radius: 5px;
+	mix-blend-mode: multiply;
+	padding: 10px 20px;
+	cursor: grab;
 }
 
 
@@ -58,6 +62,9 @@ nav {
 	padding: 0;
 	margin: 0;
 	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .menu {
@@ -73,7 +80,7 @@ nav {
 .menu li a {
 	display: inline-block;
 	font-family: 'Barlow', sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	padding: 10px 15px;
 	text-decoration: none;
 	color: #D3CBCB;
@@ -145,7 +152,15 @@ body {
 }
 
 .offer {
-	margin-top: 150px;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+}
+.arrow-down {
+	position: absolute;
+	bottom: 10px;
+	left: 10%;
 }
 
 .offer h1 {
@@ -317,10 +332,12 @@ body {
 	width: 100%;
 	height: auto;
 	transform: scale(1);
+	border-radius: 10%;
 }
 
 .service-list article img:hover {
 	transform: scale(1.1);
+	border-radius: 10px;
 }
 
 
@@ -428,6 +445,7 @@ article button:hover{
 }
 
 .footer__box {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	font-size: 16px;
@@ -474,16 +492,25 @@ article button:hover{
 	width: 100%;
 }
 
+.arrow-top {
+	position: fixed;
+	right: -100px;
+	top: 25px;
+	z-index: 300;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
 
-@media (max-width: 1024px) {
-	.offer h1 {
-	margin-top: 300px;
-	}
+
+.arrow-top.active {
+	right: 25px;
 }
 
 @media (min-width: 1024px) {
-	.offer h1 {
-		margin-top: 350px;
+	.logo a {
+		text-align: center;
+		font-size: 40px;
+		line-height: 40px;
 	}
 }
 
@@ -491,6 +518,8 @@ article button:hover{
 	
 	.logo a {
 		text-align: center;
+		font-size: 35px;
+		line-height: 35px;
 	}
 
 	.offer h1 {
@@ -568,7 +597,6 @@ article button:hover{
 	}
 
 	.menu {
-		margin-top: 50px;
 		display: none;
 		position: absolute;
 		background: lightgrey;
@@ -590,6 +618,9 @@ article button:hover{
 }
 
 @media (max-width: 360px) { 
+	.offer h1 {
+		font-size: 70px;
+	}
 	.price-button {
 		justify-content: space-around;
 	} 
